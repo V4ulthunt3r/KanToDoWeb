@@ -271,6 +271,20 @@ section { position: relative; }
 .chip .ic { font-size: 1.4rem; line-height: 1.2; }
 .chip h4 { margin: 0 0 4px; font-size: 1.02rem; font-weight: 700; color: #fff; }
 .chip p { margin: 0; font-size: .92rem; font-weight: 300; color: var(--text-dim); }
+.chip-badge {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 8px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: .66rem;
+  font-weight: 700;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+  color: var(--gold);
+  background: rgba(255, 199, 71, 0.12);
+  border: 1px solid rgba(255, 199, 71, 0.28);
+}
 
 /* ---------- Download CTA ---------- */
 .cta {
