@@ -71,12 +71,6 @@ a { color: inherit; text-decoration: none; }
 }
 .btn-ghost:hover { border-color: var(--accent); color: var(--accent-bright); }
 
-/* "Coming soon" — non-clickable CTA (no store link yet) */
-.soon { cursor: default; }
-.btn.btn-primary.soon:hover { transform: none; box-shadow: 0 10px 30px -8px rgba(176, 97, 255, 0.55); }
-.nav-cta.soon { background: rgba(176, 97, 255, 0.14); border: 1px solid var(--border); color: var(--accent-bright); }
-.nav-cta.soon:hover { transform: none; }
-
 /* ---------- Hero ---------- */
 .hero {
   position: relative;
