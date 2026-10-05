@@ -56,6 +56,24 @@
   </div>
 </header>
 
+<!-- VIDEO -->
+<section class="video" id="video">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Video</span>
+      <h2>KanToDo in Aktion</h2>
+      <p>In wenigen Minuten siehst du, wie Board, XP und Trophäen zusammenspielen.</p>
+    </div>
+    <div class="video-frame">
+      <button class="video-facade" type="button" data-video-id="8haL5OuV2p4" aria-label="Video abspielen">
+        <img src="./video_poster.jpg" alt="" loading="lazy">
+        <span class="video-play" aria-hidden="true"></span>
+      </button>
+    </div>
+    <p class="video-note">Beim Abspielen wird das Video von YouTube geladen. Dabei gelten die <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Datenschutzbestimmungen von Google</a>.</p>
+  </div>
+</section>
+
 <!-- FEATURES -->
 <section class="features" id="features">
   <div class="wrap">
@@ -183,5 +201,18 @@
   </div>
 </footer>
 
+<script>
+  document.querySelectorAll('.video-facade').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var iframe = document.createElement('iframe');
+      iframe.src = 'https://www.youtube-nocookie.com/embed/' + btn.dataset.videoId + '?autoplay=1&rel=0';
+      iframe.title = 'KanToDo Demo';
+      iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+      iframe.referrerPolicy = 'strict-origin-when-cross-origin';
+      iframe.allowFullscreen = true;
+      btn.replaceWith(iframe);
+    });
+  });
+</script>
 </body>
 </html>
